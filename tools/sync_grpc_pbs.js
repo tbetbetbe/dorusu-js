@@ -100,7 +100,7 @@ function main() {
       var srcRoot = fs.realpathSync(
         path.join(dirName, files[0], 'src', 'proto'));
       var dstRoot = fs.realpathSync(
-        path.join(__dirname, '..', 'pb'));
+        path.join(__dirname, '..', 'src', 'proto'));
       var toRemove = null;
       var makeCopies = processPaths(next, function makeACopy(srcs) {
         _.forEach(toRemove, function(old) {
